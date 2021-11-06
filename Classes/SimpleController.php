@@ -9,9 +9,10 @@ class SimpleController
     /** @var \PDO */
     private $pdo;
 
-    public function __construct()
+    public function __construct(\PDO $pdo = null)
     {
         $this->uid = $_GET['uid'];
+        $this->pdo = $pdo ?? new \PDO('mysql:host=localhost;dbname=db', 'db', 'db');
     }
     public function executeAction(): void
     {
