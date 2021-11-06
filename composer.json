@@ -1,0 +1,27 @@
+{
+  "name": "olly/sast-demo",
+  "type": "typo3-cms-extension",
+  "description": "SAST Demo",
+  "license": ["GPL-2.0-or-later"],
+  "keywords": ["TYPO3", "SAST"],
+  "authors": [
+    {
+      "name": "Oliver Hader",
+      "email": "oliver.hader@typo3.org",
+      "homepage": "https://xn--hofhckerei-t5a.de/"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Olly\\SastDemo\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "sast_demo"
+    }
+  }
+}
